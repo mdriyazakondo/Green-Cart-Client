@@ -19,7 +19,7 @@ const ButtomBanner = () => {
             Why We Are the Best?
           </h1>
           {features.map((feature, index) => (
-            <div className="flex items-center gap-4 mt-2">
+            <div key={index} className="flex items-center gap-4 mt-2">
               <img
                 src={feature.icon}
                 alt={feature.title}

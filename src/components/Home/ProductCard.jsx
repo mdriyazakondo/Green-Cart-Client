@@ -27,6 +27,7 @@ const ProductCard = ({ product }) => {
               .fill("")
               .map((_, i) => (
                 <img
+                  key={i}
                   className="md:w-3.5 w-3"
                   src={i < 4 ? assets.star_icon : assets.star_dull_icon}
                 />
